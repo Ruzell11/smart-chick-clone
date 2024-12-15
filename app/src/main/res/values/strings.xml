@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string-array name="roles_array">
+        <item>Select your role</item>
+        <item>Farmer</item>
+        <item>Admin</item>
+    </string-array>
+</resources>

@@ -1,0 +1,127 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brown_white_gradient"
+    tools:context=".AddChickenInformationActivity">
+
+    <!-- ScrollView wrapping the content to allow scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <!-- LinearLayout inside the ScrollView to hold the content -->
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Chicken Image placed above the CardView -->
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="299dp"
+                android:layout_height="201dp"
+                app:srcCompat="@drawable/chicken_egg"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- CardView with input fields and button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="345dp"
+                android:layout_height="415dp"
+                app:cardCornerRadius="20dp"
+                android:layout_gravity="center">
+
+                <!-- EditText for Chicken Breed -->
+                <EditText
+                    android:id="@+id/chickenBreedEditText"
+                    android:layout_width="270dp"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edittext_bg"
+                    android:backgroundTint="@null"
+                    android:elevation="8dp"
+                    android:hint="Chicken Breed"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColorHint="#757575"
+                    android:textStyle="bold" />
+
+                <!-- EditText for Chicken Birthdate -->
+                <EditText
+                    android:id="@+id/chickenBirthdateEditText"
+                    android:layout_height="56dp"
+                    android:layout_width="270dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/edittext_bg"
+                    android:elevation="8dp"
+                    android:hint="Chicken Birthdate"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+
+                <!-- EditText for Chicken Age -->
+                <EditText
+                    android:id="@+id/chickenAgeEditText"
+                    android:layout_height="56dp"
+                    android:layout_width="270dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="110dp"
+                    android:background="@drawable/edittext_bg"
+                    android:elevation="8dp"
+                    android:hint="Chicken Age"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+
+                <!-- EditText for Chicken Vitamins -->
+                <EditText
+                    android:id="@+id/chickenVitaminsEditText"
+                    android:layout_height="56dp"
+                    android:layout_width="270dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="250dp"
+                    android:background="@drawable/edittext_bg"
+                    android:elevation="8dp"
+                    android:hint="Chicken Vitamins"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+
+                <!-- Button to add chicken information -->
+                <Button
+                    android:id="@+id/addChickenInformationBtn"
+                    android:layout_width="208dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="330dp"
+                    android:background="#4CAF50"
+                    android:text="Add Info"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Logo positioned in the top-right corner of the screen -->
+    <ImageView
+        android:id="@+id/homeBtn"
+        android:layout_width="70dp"
+        android:layout_height="64dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
